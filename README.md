@@ -2,8 +2,15 @@
 Follow up on Springboot :)
 
 Spring Boot - Runners
-- Allow you to perform any actions(execute the code) immediately after the application has started
+- Runners are interfaces in Spring Boot that allow you to execute code once the application context is fully loaded and the application is ready to run. 
+- They’re particularly useful for running specific logic during application startup.
 
+Spring Boot provides two main types of runners:
+CommandLineRunner: Executes code with access to the command-line arguments passed to the application.
+ApplicationRunner: Similar to CommandLineRunner but provides richer argument parsing through the ApplicationArguments interface.
+
+Step 1: Implement the Interface
+- Create a clas that implements either CommandLineRunner or Application Runner
 1. Application Runner
 - An interface used to execute the ode after the SpringBoot application started.
 
